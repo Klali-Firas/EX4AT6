@@ -6,15 +6,16 @@
     <title>Departement Technologies de l'informatique</title>
     <style>
         body{
-            background-color: cyan;
+            background-image: url(bg.png);
+            background-attachment: fixed;
             font-family: verdana;
         }
         nav{
             background-color: darkblue;
-            text-align: center;
+
             color:white;
             width: auto;
-            padding: 5px;
+            padding: 15px;
             border-radius: 4px;
             
         }
@@ -30,22 +31,25 @@
         }
         #logo{
             height: 100px;
+            background-color: white;
         }
         header{
             text-align: center;
+            margin-bottom: 20px;
         }
         nav a:link{
+            padding: 10px;
             color: white;
-            font-size: larger;
             margin: 10px;
+            text-decoration: none;
         }
         nav a:visited{
-            color:#F2C438 ;
+            color:white ;
         }
         nav a:hover{
             background-color: red;
-            padding: 5px;
-            border-radius: 7px;
+            padding: 10px;
+            border-radius: 30px;
         }
         article{
             width: 80%;
@@ -54,10 +58,6 @@
             border-radius: 15px;
             padding: 5px;
             margin-right:5px ;
-        }
-        ul{
-            list-style-image: url("arrow.png");
-            
         }
         section{
             display: flex;
@@ -69,6 +69,8 @@
             width: 20%;
             background-color:#131048;
             height: fit-content;
+            text-align: center;
+            padding: 3px;
         }
         h1{
             text-align: center;
@@ -77,7 +79,7 @@
         }
         h3{
             font-size: x-large;
-            color: #7D6145;
+            color: #081076;
         }
         h4{
             font-size: larger;
@@ -87,24 +89,30 @@
             font-size: 20px;
             color: #59564F;
         }
-        aside ul li a:link{
+        aside a:link{
             color: white;
         }
-        aside ul li a:visited{
-            color:#EB613B;
+        aside a:visited{
+            color:white;
         }
-        aside ul li a:hover{
-
+        aside a:hover{
             background-color: white;
             color: #131048;
             padding: 5px;
             border-radius: 7px;
         }
+        .a_ti{
+            background-color: red;
+            padding: 5px;
+            border-radius: 30px;
+        }
     </style>
 </head>
 <body>
     <header><img id="logo"src="rades.png" alt="logo de rades"></header>
-    <nav><a href="index.html">Acceuil</a>||<a href="ge.html">Génie électrique</a> </nav>
+    <nav><a href="index.html">Acceuil</a>
+        <a href="" class="a_ti"> Technologies de l’informatique</a>
+        <a href="ge.html">Génie électrique</a> </nav>
     
     <section>
     <article>
@@ -112,26 +120,31 @@
         <h3>Présentation:</h3>
         <p> Le Département des Technologies de l’informatique a démarré en février 2003. Il regroupe des enseignants et des professionnels (vacataires) à la disposition des étudiants préparant un D.E.S.T (Diplôme des Études Supérieures de Technologie) ou une Licence appliquée.</p>
         <h4>Débouchés :</h4>
-        <p>* Développeur d’applications, <br>
-            * Développeur Web, <br>
-            * Administrateur réseaux et systèmes, <br>
-            * Informaticien d’exploitation (installation de solutions, Maintenance logicielle et matérielle, sécurité),
-            <br>* Responsable d’exploitation.</p>
+        <ul><li>
+            Développeur d’applications, 
+        </li><br><li>
+            Développeur Web, 
+        </li><br><li>
+            Administrateur réseaux et systèmes, 
+        </li><br><li>
+            Informaticien d’exploitation (installation de solutions, Maintenance logicielle et matérielle, sécurité),
+        </li><br><li>
+            Responsable d’exploitation.
+        </li>
+        </ul>
         <h3>Objectifs:</h3>
         <p> Former des Techniciens Supérieurs en informatique et technologies de l’information capables de participer au développement du système d’information de l’entreprise aussi bien sur le plan matériel que logiciel.</p>
 
     </article>
     <aside>
-        <ul>
-        <li><a href="https://www.w3.org/" target="_blank">W3C</a></li>
+        <a href="https://www.w3.org/" target="_blank">W3C</a>
         <hr>
-        <li><a href="http://www.mes.tn/" target="_blank">MES</a></li>
+        <a href="http://www.mes.tn/" target="_blank">MES</a>
         <hr>
-        <li><a href="https://isetso.rnu.tn/" target="_blanc">Iset Sousse</a></li>
+        <a href="https://isetso.rnu.tn/" target="_blanc">Iset Sousse</a>
         <hr>
-        <li><a href="https://matwprojectme.org/product/palestine-donation/?utm_medium=ppc&utm_campaign=&utm_source=&utm_content=&utm_term=&utm_matchtype=&gclid=Cj0KCQiAveebBhD_ARIsAFaAvrEXilGYC_DI_g21IqdnfXN0rw_L_03IMznx5uxaEM8EgesC-_-PuAIaAr8VEALw_wcB" target="_blanc">Help!</a></li>
+        <a href="https://matwprojectme.org/product/palestine-donation/?utm_medium=ppc&utm_campaign=&utm_source=&utm_content=&utm_term=&utm_matchtype=&gclid=Cj0KCQiAveebBhD_ARIsAFaAvrEXilGYC_DI_g21IqdnfXN0rw_L_03IMznx5uxaEM8EgesC-_-PuAIaAr8VEALw_wcB" target="_blanc">Help!</a>
         <hr>
-        </ul>
     </aside>
 </section>
     <footer>copyright @ Firas Klali,Rami,Montassar 2019</footer>
